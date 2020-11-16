@@ -1,0 +1,47 @@
+p {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+.big-container {
+  width: 40rem;
+  background-color: teal;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  background-color: rgb(86, 133, 204);
+  height: 5rem;
+}
+
+.content-container {
+  background-color: rgb(219, 234, 255);
+}
+.list-section {
+  height: 100%;
+  color: whitesmoke;
+  min-height: 20rem;
+  color: black;
+}
+.addFood-section {
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(86, 133, 204);
+}
+.list {
+  padding: 0;
+  margin: 0;
+}
+.foodInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
