@@ -1,28 +1,40 @@
 window.addEventListener('load',startProgram);
 let listOfVeggies = ["gurka", "banan","lök","gurka"]
+let index = 0;
+
 
 function startProgram(){
     addEventListeners()
+    
 }
 function addEventListeners(){
         document.getElementById('nexItem').addEventListener('click',(event)=>{
         event.preventDefault;
-        testFunction()
+        askQuestion()
+        
     })
+    document.getElementById('yesButton').addEventListener('click',()=>{
+        handleYes()
+    })
+   
+}
+function askQuestion(){
+    question = listOfVeggies[index];
+    showQestion()
+   
+}
+function next(){
+    index++;
+    askQuestion()
+    
 }
        
-  
+function showQestion(){
+    document.getElementById('displayItems').innerText = question
+    
+}
 
-    function testFunction(){
-        const currentItem = document.getElementById('displayItems') // Vad nu ditt element har för ID?
-        
-        currentItem.innerText = listOfVeggies[currentIndex];
-        currentIndex++;
-        console.log(listOfVeggies)
-     }
-        
-    function testAnotherFunction(){
-        if(listOfVeggies.indexOf = 0){
-            
-        }
-    }
+function handleYes(){
+    console.log('yea')
+    next()
+}
